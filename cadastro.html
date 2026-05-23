@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Patrimônio</title>
+  
+  <!-- Fontes e Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="login-card" id="cadastro-card">
+    <h1 class="login-title">Cadastro de Patrimônio</h1>
+
+    <div class="field-group">
+      <label class="field-label" for="numero-patrimonio">Número do Patrimônio</label>
+      <div class="field-wrap">
+        <input
+          id="numero-patrimonio"
+          class="field-input"
+          type="text"
+          placeholder="Ex: PAT-0001"
+        />
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="descricao-bem">Descrição do Bem</label>
+      <div class="field-wrap">
+        <textarea
+          id="descricao-bem"
+          class="field-input"
+          placeholder="Descreva o item patrimonial"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="localizacao">Localização / Sala</label>
+      <div class="field-wrap">
+        <input
+          id="localizacao"
+          class="field-input"
+          type="text"
+          placeholder="Ex: Laboratório 2"
+        />
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="estado-conservacao">Estado de Conservação</label>
+      <div class="field-wrap">
+        <select id="estado-conservacao" class="field-input">
+          <option value="bom">Bom</option>
+          <option value="regular">Regular</option>
+          <option value="ruim">Ruim</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="responsavel">Responsável</label>
+      <div class="field-wrap">
+        <input
+          id="responsavel"
+          class="field-input"
+          type="text"
+          placeholder="Nome do responsável"
+        />
+      </div>
+    </div>
+
+    <button class="btn-entrar" id="btn-cadastrar" type="button">Cadastrar</button>
+
+    <div class="bottom-links">
+      <a href="inventario.html">Ver Inventário Atual</a>
+      <a href="login.html">Início (Voltar)</a>
+    </div>
+  </div>
+
+  <!-- Link para o arquivo JavaScript externo (se houver lógica futuramente) -->
+  <script src="script.js"></script>
+
+</body>
+</html>

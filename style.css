@@ -1,0 +1,284 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: #f4f6fb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-card {
+  background: #ffffff;
+  border: 1px solid #e2e6ef;
+  border-radius: 16px;
+  padding: 2.5rem 2.25rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 0.45s cubic-bezier(.22,.68,0,1.2) both;
+}
+
+.inventory-card {
+  max-width: 800px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.login-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1d23;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: -0.3px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 1.25rem;
+}
+
+.field-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b5263;
+}
+
+.field-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-input {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #d0d5e0;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-family: 'Sora', sans-serif;
+  color: #1a1d23;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+textarea.field-input {
+  height: auto;
+  min-height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+
+select.field-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234b5263' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.field-input::placeholder {
+  color: #a0a8b8;
+  font-size: 13px;
+}
+
+.field-input:focus {
+  border-color: #3874D8;
+  box-shadow: 0 0 0 3px rgba(56, 116, 216, 0.12);
+}
+
+.field-input.has-toggle {
+  padding-right: 40px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #a0a8b8;
+  transition: color 0.15s;
+}
+
+.toggle-btn:hover { color: #4b5263; }
+
+.toggle-btn i { font-size: 18px; }
+
+.btn-entrar {
+  width: 100%;
+  height: 42px;
+  background: #3874D8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.18s, transform 0.1s;
+  letter-spacing: 0.1px;
+}
+
+.btn-atualizar {
+  width: 150%;
+  height: 42px;
+  background: #3874D8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.18s, transform 0.1s;
+  letter-spacing: 0.1px;
+}
+
+.btn-deslogar {
+  width: 150%;
+  height: 42px;
+  background: #d83868;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.18s, transform 0.1s;
+  letter-spacing: 0.1px;
+}
+
+
+.btn-entrar:hover { background: #2f63bf; }
+.btn-entrar:active { transform: scale(0.985); }
+.btn-entrar:disabled { background: #7aa6e8; cursor: not-allowed; }
+
+.forgot {
+  text-align: center;
+  margin-top: 0.9rem;
+  font-size: 13px;
+  color: #4b5263;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.forgot:hover { color: #3874D8; }
+
+.register-row {
+  text-align: center;
+  margin-top: 1.75rem;
+  font-size: 13px;
+  color: #4b5263;
+  border-top: 1px solid #e2e6ef;
+  padding-top: 1.25rem;
+}
+
+.register-row a {
+  color: #3874D8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.register-row a:hover { text-decoration: underline; }
+
+.bottom-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.bottom-links a {
+  font-size: 13px;
+  color: #4b5263;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.bottom-links a:hover {
+  color: #3874D8;
+}
+
+.error-msg {
+  font-size: 12px;
+  color: #c0392b;
+  margin-top: 4px;
+  display: none;
+}
+
+.field-input.error {
+  border-color: #e24b4a;
+  box-shadow: 0 0 0 3px rgba(226, 75, 74, 0.1);
+}
+
+.shake {
+  animation: shake 0.35s ease;
+}
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20%     { transform: translateX(-6px); }
+  40%     { transform: translateX(6px); }
+  60%     { transform: translateX(-4px); }
+  80%     { transform: translateX(4px); }
+}
+
+/* Inventory Table Styles */
+.table-container {
+  border: 1px solid #e2e6ef;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+  color: #1a1d23;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e6ef;
+}
+
+.inventory-table th {
+  background-color: #f4f6fb;
+  color: #4b5263;
+  font-weight: 600;
+}
+
+.inventory-table tr:last-child td {
+  border-bottom: none;
+}
+
+.inventory-table tbody tr:hover {
+  background-color: #f8fafc;
+}
