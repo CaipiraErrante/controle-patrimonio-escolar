@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5228/api';
+const API_URL = 'http://localhost:8080/api';
 
 // --- Login Page ---
 const btnEntrar = document.getElementById('btn-entrar');

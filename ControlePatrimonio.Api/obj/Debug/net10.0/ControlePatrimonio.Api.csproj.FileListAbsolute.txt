@@ -1,121 +1,243 @@
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\appsettings.Development.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\appsettings.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ControlePatrimonio.Api.staticwebassets.endpoints.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ControlePatrimonio.Api.exe
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ControlePatrimonio.Api.deps.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ControlePatrimonio.Api.runtimeconfig.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ControlePatrimonio.Api.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ControlePatrimonio.Api.pdb
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Humanizer.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.Build.Locator.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Mono.TextTemplating.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\MySqlConnector.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\System.CodeDom.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\System.Composition.AttributedModel.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\System.Composition.Convention.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\System.Composition.Hosting.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\System.Composition.Runtime.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\System.Composition.TypedParts.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.csproj.AssemblyReference.cache
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.AssemblyInfoInputs.cache
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.AssemblyInfo.cs
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.csproj.CoreCompileInputs.cache
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\scopedcss\bundle\ControlePatrimonio.Api.styles.css
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\staticwebassets.development.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\Controle.7BE265CB.Up2Date
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\refint\ControlePatrimonio.Api.dll
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.pdb
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ControlePatrimonio.Api.genruntimeconfig.cache
-C:\Users\lucia\OneDrive\Documents\Controle Patrimonio\ControlePatrimonio.Api\obj\Debug\net10.0\ref\ControlePatrimonio.Api.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/appsettings.Development.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/appsettings.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.staticwebassets.endpoints.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.exe
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.deps.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.runtimeconfig.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.pdb
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Humanizer.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.Build.Locator.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.OpenApi.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Mono.TextTemplating.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/MySqlConnector.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/Pomelo.EntityFrameworkCore.MySql.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/System.CodeDom.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.AttributedModel.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.Convention.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.Hosting.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.Runtime.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.TypedParts.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.csproj.AssemblyReference.cache
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/rpswa.dswa.cache.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.AssemblyInfoInputs.cache
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.AssemblyInfo.cs
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.csproj.CoreCompileInputs.cache
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/rjimswa.dswa.cache.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/scopedcss/bundle/ControlePatrimonio.Api.styles.css
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.build.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.build.json.cache
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.development.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/swae.build.ex.cache
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/Controle.7BE265CB.Up2Date
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/refint/ControlePatrimonio.Api.dll
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.pdb
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.genruntimeconfig.cache
+C:/Users/lucia/OneDrive/Documents/Controle Patrimonio/ControlePatrimonio.Api/obj/Debug/net10.0/ref/ControlePatrimonio.Api.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/appsettings.Development.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/appsettings.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.staticwebassets.endpoints.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.deps.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.runtimeconfig.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ControlePatrimonio.Api.pdb
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Humanizer.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.Build.Locator.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.Extensions.DependencyModel.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Microsoft.OpenApi.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Mono.TextTemplating.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/MySqlConnector.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/System.CodeDom.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.AttributedModel.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.Convention.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.Hosting.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.Runtime.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/System.Composition.TypedParts.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.csproj.AssemblyReference.cache
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/rpswa.dswa.cache.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.GeneratedMSBuildEditorConfig.editorconfig
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.AssemblyInfoInputs.cache
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.AssemblyInfo.cs
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.csproj.CoreCompileInputs.cache
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.MvcApplicationPartsAssemblyInfo.cs
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.MvcApplicationPartsAssemblyInfo.cache
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.sourcelink.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/scopedcss/bundle/ControlePatrimonio.Api.styles.css
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.build.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.build.json.cache
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.development.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/swae.build.ex.cache
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/Controle.7BE265CB.Up2Date
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/refint/ControlePatrimonio.Api.dll
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.pdb
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ControlePatrimonio.Api.genruntimeconfig.cache
+/home/marcelo/Projects/UnivespPi02/controle-patrimonio-escolar/ControlePatrimonio.Api/obj/Debug/net10.0/ref/ControlePatrimonio.Api.dll
