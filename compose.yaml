@@ -1,59 +1,45 @@
 services:
-  mysql:
-    image: mysql:8.0
-    container_name: controle-patrimonio-mysql
-    restart: unless-stopped
-    env_file:
-      - .env
-    environment:
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-    ports:
-      - "${MYSQL_PORT:-3306}:3306"
-    volumes:
-      - mysql_data:/var/lib/mysql
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${MYSQL_ROOT_PASSWORD}"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 20s
-
   frontend:
     build:
-      context: ./Frontend
+      context: ./frontend
       dockerfile: Dockerfile
-    image: controle-patrimonio-frontend:latest
-    container_name: controle-patrimonio-frontend
+    image: frontend:v1.0.0
+    container_name: frontend
     restart: unless-stopped
+    depends_on:
+      - backend    
     ports:
       - "80:80"
 
-  api:
-    build:
-      context: ./ControlePatrimonio.Api
-      dockerfile: Dockerfile
-    image: controle-patrimonio-api:latest
-    container_name: controle-patrimonio-api
-    restart: unless-stopped
-    depends_on:
-      mysql:
-        condition: service_healthy
+  db:
+    image: postgres:18
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/18/docker
     env_file:
       - .env
     environment:
-      MYSQL_HOST: mysql
-      MYSQL_PORT: ${MYSQL_PORT:-3306}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      ConnectionStrings__DefaultConnection: "Server=mysql;Port=${MYSQL_PORT:-3306};Database=${MYSQL_DATABASE};User=${MYSQL_USER};Password=${MYSQL_PASSWORD};"
-      ASPNETCORE_URLS: http://+:8080
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: backend:v1.0.0
+    container_name: backend
+    # working_dir: /app
+    volumes:
+      - ./backend:/app
     ports:
-      - "8080:8080"
+      - "8000:8000"
+    environment:
+      DEBUG: "1"
+    depends_on:
+      - db
+    command: >
+      sh -lc "chmod +x /app/scripts/commands.sh && /app/scripts/commands.sh"
 
 volumes:
-  mysql_data:
+  postgres_data:
     driver: local

@@ -90,7 +90,7 @@ Para reiniciar os containers:
 docker compose up -d --force-recreate
 ```
 
-> A aplicação estará disponível em `http://localhost:8080`
+> A aplicação estará disponível em `http://localhost` (porta 80)
 
 ### 3. Rodando o Frontend
 

@@ -1,0 +1,22 @@
+[project]
+name = "controle-patrimonio-escolar"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dev@marcelo.magalhaes.nom.br", email = "dev@marcelo.magalhaes.nom.br" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django==6.1",
+    "django-allauth[headless]>=65.19.2",
+    "djangorestframework>=3.18.0",
+    "psycopg[binary]==3.3",
+]
+
+[project.scripts]
+controle-patrimonio-escolar = "controle_patrimonio_escolar:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
