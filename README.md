@@ -10,15 +10,15 @@ O sistema tem como objetivo permitir a realização de cadastro, visualização,
 
 ### Frontend
 
-* **HTML5:** Estrutura das páginas de login, inventário e cadastro.
-* **CSS3:** Estilização própria com design moderno, cores agradáveis e pequenas interações (hover e animações de focus).
-* **JavaScript:** Lógica de manipulação do DOM e integração assíncrona (via `fetch`) com a API do backend.
+* **Angular:** Framework para desenvolvimento web em typescript.
 
 ### Backend
 
-* **C# .NET 10 (Web API):** Servidor RESTful para processamento das requisições.
-* **Entity Framework Core (Pomelo MySQL):** Mapeamento Objeto-Relacional (ORM) para abstração do banco de dados.
-* **MySQL:** Banco de dados relacional escolhido para armazenar os usuários e patrimônios.
+* **Django:** Framework python utilizado para a API (Django REST_framework) e controle de usuários (AllAuth).
+
+### Base da Dados
+
+* **PostgreSQL:** Banco de dados relacional escolhido para armazenamento.
 
 ## Arquitetura do Backend
 
@@ -31,29 +31,30 @@ A API foi desenvolvida no padrão MVC, separando  as responsabilidades do códig
 
 ## Como Executar o Projeto
 
-### Requisitos
+### 1. Requisitos
 
 Antes de iniciar, verifique se o ambiente atende aos itens abaixo:
 
 * Docker e Docker Compose instalados
-* (Opcional, para execução local sem container) .NET 10 SDK instalado
 * Acesso ao navegador para abrir a interface do sistema
+* Python 3.14.4
+* UV (Gestor de pacotes e ambiente virtual python)
 
-### 1. Arquivo de ambiente
+### 2. Variáveis de ambiente
 
-Na raiz do projeto, existe um arquivo `.env` com as variáveis usadas pelo MySQL e pela aplicação:
+Na raiz do projeto, existe um arquivo `.env-example` com as variáveis usadas pelo PostgreSQL e pela aplicação:
 
 ```env
-MYSQL_DATABASE=ControlePatrimonio
-MYSQL_USER=patrimonio
-MYSQL_PASSWORD=patrimonio123
-MYSQL_ROOT_PASSWORD=root123
-MYSQL_PORT=3306
+POSTGRES_DB=djangodb
+POSTGRES_USER=django_user
+POSTGRES_PASSWORD=django_password
 ```
 
-Essas informações também são usadas pelo arquivo `compose.yaml` para subir os containers do banco e da API.
+Altere os valores e renomeie o arquivo para .env ***ANTES*** de realizar a instalação.
 
-### 2. Rodando com Docker Compose (recomendado)
+Essas informações também são usadas pelo arquivo `compose.yaml`.
+
+### 3. Rodando com Docker Compose
 
 A partir da raiz do projeto, execute:
 
@@ -63,8 +64,9 @@ docker compose up --build -d
 
 Esse comando vai criar e iniciar:
 
-* container do MySQL na porta `3306`
-* container da API na porta `8080`
+* container do PostgreSQL na porta `5432`
+* container do backend na porta `8000`
+* container do frontend reservado para as portas '80/443'
 
 Para verificar se os containers estão ativos:
 
@@ -75,7 +77,7 @@ docker compose ps
 Para acompanhar os logs da API:
 
 ```bash
-docker compose logs -f api
+docker compose logs -f backend
 ```
 
 Para parar os containers:
@@ -90,32 +92,21 @@ Para reiniciar os containers:
 docker compose up -d --force-recreate
 ```
 
-> A aplicação estará disponível em `http://localhost` (porta 80)
-
-### 3. Rodando o Frontend
-
-O frontend foi feito com arquivos estáticos simples.
-
-1. Acesse a raiz do projeto.
-2. Abra o arquivo `login.html` no seu navegador.
-3. Se o banco de dados acabou de ser criado, faça login utilizando as seguintes credenciais padrão que a API injeta automaticamente:
-   * **Usuário:** `admin`
-   * **Senha:** `123`
-
-### 4. Execução local sem Docker
-
-Se preferir rodar a API manualmente, utilize o ambiente local do .NET:
+Para criar uma conta de superusuário:
 
 ```bash
-set -a
-source .env
-set +a
-cd ControlePatrimonio.Api
-dotnet ef database update
-dotnet run
+docker compose exec -it backend sh # para acessar o container do backend
+
+python manage.py createsuperuser # comando do django para criar o superusuário
 ```
 
-> O backend local normalmente fica em `http://localhost:5228` ou conforme a configuração do projeto.
+### 4. Se tudo correr bem:
+
+> A aplicação estará disponível em `http://localhost` (porta 80).
+
+> A API poderá ser consultada e testada em http://localhost:8000.
+
+> A área de administração do Django poderá ser acessada em http://localhost:8000/admin.
 
 ## 👥 Funcionalidades Implementadas
 

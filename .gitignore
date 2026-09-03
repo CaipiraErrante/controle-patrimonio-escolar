@@ -1,0 +1,57 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Django / local data
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Frontend
+node_modules/
+/dist/
+/out-tsc/
+/.angular/
+/.sass-cache/
+/coverage/
+/.nyc_output/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Meus
+Modelfile
