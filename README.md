@@ -122,9 +122,9 @@ As dependências do python (para o backend, por hora) estão fixadas no arqvivo 
 
 **Para o frontend:**
 
-O sistema utiliza duas API's: Uma para os dados do negócio (gestão de bens de patrimônio) e outra exclusiva para autenticação e controle de acesso aos recursos do sistema pelos usuários.
+O sistema utiliza duas API's: Uma para os dados do negócio (gestão de bens patrimoniais) e outra exclusiva para autenticação e controle de acesso aos recursos do sistema pelos usuários.
 
-As especificações da API dos dados do negócio podem ser consultadas na própria aplicação, no endereço http://localhost:8000
+As especificações da API dos dados do negócio podem ser consultadas na própria aplicação, no endereço `http://localhost:8000`
 
 Já as especificações da API dos usuários estão publicadas em: https://docs.allauth.org/en/latest/headless/openapi-specification/
 
