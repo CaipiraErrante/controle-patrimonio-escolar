@@ -6,6 +6,8 @@ services:
     image: frontend:v1.0.0
     container_name: frontend
     restart: unless-stopped
+    volumes:
+      - ./frontend:/usr/share/nginx/html
     depends_on:
       - backend    
     ports:
