@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "djangodb",
-        "USER": "django_user",
-        "PASSWORD": "django_password",
-        "HOST": "db",
-        "PORT": "5432",
+        "NAME": os.environ.get('POSTGRES_DB', ''),
+        "USER": os.environ.get('POSTGRES_USER', ''),
+        "PASSWORD": os.environ.get('POSTGRES_PASSWORD', ''),
+        "HOST": os.environ.get('POSTGRES_HOST', ''),
+        "PORT": os.environ.get('POSTGRES_PORT', ''),
         # "OPTIONS": {
         #     "service": "my_service",
         #     "passfile": ".my_pgpass",
@@ -131,7 +131,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 
 # Email
