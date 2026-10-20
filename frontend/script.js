@@ -199,3 +199,88 @@ if (btnAtualizar || document.getElementById('inventory-card')) {
   
   loadInventario();
 }
+// Endpoints das duas APIs do projeto
+const API_AUTH_URL = "http://localhost:8000/api/auth/login/"; // API 1: Autenticação
+const API_DADOS_URL = "http://localhost:8000/api/patrimonio/";  // API 2: Dados do Negócio
+
+// 1. Função para realizar o LOGIN (API 1)
+const formLogin = document.getElementById("form-login");
+if (formLogin) {
+    formLogin.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const msgErro = document.getElementById("msg-erro");
+
+        try {
+            const response = await fetch(API_AUTH_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                // Guarda o Token retornado pela API no armazenamento local
+                localStorage.setItem("token", data.token || data.access);
+                
+                // Redireciona para a tela do inventário após o login bem-sucedido
+                window.location.href = "inventario.html";
+            } else {
+                if (msgErro) msgErro.style.display = "block";
+            }
+        } catch (error) {
+            console.error("Erro ao comunicar com a API de Autenticação:", error);
+            alert("Não foi possível conectar com o servidor de autenticação.");
+        }
+    });
+}
+
+// 2. Função para carregar os DADOS DO INVENTÁRIO (API 2)
+// 2. Função para carregar os DADOS DO INVENTÁRIO (API 2)
+async function carregarInventario() {
+    const tabela = document.getElementById("tabela-inventario");
+    if (!tabela) return; // Só executa se estiver na página inventario.html
+
+    const token = localStorage.getItem("token");
+    if (!token) {
+        window.location.href = "login.html"; // Redireciona para o login se não houver token
+        return;
+    }
+
+    try {
+        const response = await fetch(API_DADOS_URL, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Token ${token}`
+            }
+        });
+
+        if (response.ok) {
+            const itens = await response.json();
+            tabela.innerHTML = ""; // Limpa a tabela antes de preencher
+            
+            itens.forEach(item => {
+                tabela.innerHTML += `
+                    <tr>
+                        <td>${item.id}</td>
+                        <td>${item.nome || item.descricao}</td>
+                        <td>${item.codigo || item.tombo}</td>
+                        <td>${item.status || 'Ativo'}</td>
+                    </tr>
+                `;
+            });
+        } else if (response.status === 401) {
+            alert("Sessão expirada. Faça login novamente.");
+            localStorage.removeItem("token");
+            window.location.href = "login.html";
+        }
+    } catch (error) {
+        console.error("Erro ao carregar dados do patrimônio:", error);
+    }
+}
+
+// Executa a busca de dados ao carregar a página do inventário
+document.addEventListener("DOMContentLoaded", carregarInventario);
