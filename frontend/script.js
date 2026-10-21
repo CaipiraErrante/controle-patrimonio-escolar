@@ -1,4 +1,67 @@
-const API_URL = 'http://localhost:8080/api';
+const API_URL = '/api/bens_moveis/';
+const AUTH_API_URL = '/_allauth/browser/v1';
+
+function readCsrfToken() {
+  const csrfCookie = document.cookie
+    .split(';')
+    .map(cookie => cookie.trim())
+    .find(cookie => cookie.startsWith('csrftoken='));
+
+  return csrfCookie
+    ? decodeURIComponent(csrfCookie.slice('csrftoken='.length))
+    : null;
+}
+
+async function getCsrfToken() {
+  let csrfToken = readCsrfToken();
+  if (csrfToken) return csrfToken;
+
+  const response = await fetch(`${AUTH_API_URL}/config`, {
+    credentials: 'include'
+  });
+  if (!response.ok) {
+    throw new Error(`Não foi possível obter o token de segurança (${response.status}).`);
+  }
+
+  csrfToken = readCsrfToken();
+  if (!csrfToken) {
+    throw new Error('O servidor não forneceu o token de segurança.');
+  }
+  return csrfToken;
+}
+
+async function apiFetch(url, options = {}) {
+  const method = (options.method || 'GET').toUpperCase();
+  const headers = new Headers(options.headers || {});
+
+  if (!['GET', 'HEAD', 'OPTIONS', 'TRACE'].includes(method)) {
+    headers.set('X-CSRFToken', await getCsrfToken());
+  }
+
+  return fetch(url, {
+    ...options,
+    method,
+    headers,
+    credentials: 'include'
+  });
+}
+
+async function throwApiError(response) {
+  const body = await response.text();
+  let detail = body;
+  if ((response.headers.get('content-type') || '').includes('application/json')) {
+    const data = JSON.parse(body);
+    if (data.detail) {
+      detail = data.detail;
+    } else if (data && typeof data === 'object') {
+      detail = Object.entries(data)
+        .map(([field, errors]) => `${field}: ${[].concat(errors).join(', ')}`)
+        .join('; ') || body;
+    }
+  }
+
+  throw new Error(`Erro do servidor (${response.status})${detail ? `: ${detail}` : '.'}`);
+}
 
 // --- Login Page ---
 const btnEntrar = document.getElementById('btn-entrar');
@@ -58,16 +121,31 @@ if (btnEntrar) {
     btnEntrar.disabled = true;
 
     try {
-      const response = await fetch(`${API_URL}/auth/login`, {
+      const csrfToken = await getCsrfToken();
+
+      const response = await fetch(`${AUTH_API_URL}/auth/login`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': csrfToken
+        },
         body: JSON.stringify({ username: user, password: pass })
       });
 
       if (response.ok) {
+        const data = await response.json();
+        if (data.meta?.is_authenticated) {
+          window.location.href = 'inventario.html';
+        } else {
+          alert('Não foi possível concluir o login.');
+        }
+      } else if (response.status === 409) {
         window.location.href = 'inventario.html';
-      } else {
+      } else if (response.status === 400) {
         alert('Usuário ou senha inválidos.');
+      } else {
+        alert(`Erro do servidor ao entrar (${response.status}).`);
       }
     } catch (error) {
       alert('Erro ao conectar com o servidor.');
@@ -88,15 +166,20 @@ if (btnCadastrar) {
     document.querySelector('.login-title').textContent = 'Editar Patrimônio';
     btnCadastrar.textContent = 'Atualizar';
     
-    // Buscar dados existentes
-    fetch(`${API_URL}/patrimonios/${editId}`)
-      .then(res => res.json())
+    apiFetch(`${API_URL}${encodeURIComponent(editId)}/`)
+      .then(async response => {
+        if (!response.ok) await throwApiError(response);
+        return response.json();
+      })
       .then(data => {
         document.getElementById('numero-patrimonio').value = data.numeroPatrimonio;
         document.getElementById('descricao-bem').value = data.descricao;
         document.getElementById('localizacao').value = data.localizacao;
         document.getElementById('estado-conservacao').value = data.estado.toLowerCase();
         document.getElementById('responsavel').value = data.responsavel;
+      })
+      .catch(error => {
+        alert(`Não foi possível carregar o patrimônio: ${error.message}`);
       });
   }
 
@@ -117,30 +200,23 @@ if (btnCadastrar) {
     btnCadastrar.disabled = true;
 
     try {
-      let response;
-      if (editId) {
-        patrimonio.id = parseInt(editId);
-        response = await fetch(`${API_URL}/patrimonios/${editId}`, {
-          method: 'PUT',
+      const response = await apiFetch(
+        editId ? `${API_URL}${encodeURIComponent(editId)}/` : API_URL,
+        {
+          method: editId ? 'PUT' : 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(patrimonio)
-        });
-      } else {
-        response = await fetch(`${API_URL}/patrimonios`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(patrimonio)
-        });
-      }
+        }
+      );
 
       if (response.ok) {
         alert(editId ? 'Atualizado com sucesso!' : 'Cadastrado com sucesso!');
         window.location.href = 'inventario.html';
       } else {
-        alert('Erro ao salvar o patrimônio.');
+        await throwApiError(response);
       }
     } catch (error) {
-      alert('Erro de conexão com o servidor.');
+      alert(`Erro ao salvar o patrimônio: ${error.message}`);
     } finally {
       btnCadastrar.disabled = false;
     }
@@ -153,14 +229,21 @@ if (btnAtualizar || document.getElementById('inventory-card')) {
   
   window.deletarPatrimonio = async (id) => {
     if (confirm('Tem certeza que deseja excluir este patrimônio?')) {
-      await fetch(`${API_URL}/patrimonios/${id}`, { method: 'DELETE' });
-      loadInventario();
+      try {
+        const response = await apiFetch(`${API_URL}${encodeURIComponent(id)}/`, {
+          method: 'DELETE'
+        });
+        if (!response.ok) await throwApiError(response);
+        await loadInventario();
+      } catch (error) {
+        alert(`Erro ao excluir o patrimônio: ${error.message}`);
+      }
     }
   };
 
   const loadInventario = async () => {
     try {
-      const response = await fetch(`${API_URL}/patrimonios`);
+      const response = await apiFetch(API_URL);
       if (response.ok) {
         const data = await response.json();
         const tbody = document.querySelector('.inventory-table tbody');
@@ -180,7 +263,7 @@ if (btnAtualizar || document.getElementById('inventory-card')) {
             <td>${item.numeroPatrimonio}</td>
             <td>${item.descricao}</td>
             <td>${item.localizacao}</td>
-            <td>${item.estado}</td>
+            <td>${item.estado.charAt(0).toUpperCase()}${item.estado.slice(1)}</td>
             <td>${item.responsavel}</td>
             <td>
               <a href="cadastro.html?id=${item.id}" style="color:#3874D8; margin-right:8px; text-decoration:none;"><i class="ti ti-pencil"></i></a>
@@ -189,8 +272,12 @@ if (btnAtualizar || document.getElementById('inventory-card')) {
           `;
           tbody.appendChild(tr);
         });
+      } else {
+        await throwApiError(response);
       }
-    } catch (error) {}
+    } catch (error) {
+      alert(`Erro ao carregar o inventário: ${error.message}`);
+    }
   };
 
   if (btnAtualizar) {

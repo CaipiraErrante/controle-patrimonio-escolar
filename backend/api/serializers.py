@@ -14,11 +14,15 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ["url", "name"]
 
 class BensMoveisSerializer(serializers.HyperlinkedModelSerializer):
+    id = serializers.IntegerField(read_only=True)
+    numeroPatrimonio = serializers.CharField(source="codigoPatrimonio")
+
     class Meta:
         model = BensMoveis
         fields = [ 
-            "url", 
-            "codigoPatrimonio", 
+            "url",
+            "id",
+            "numeroPatrimonio",
             "descricao",       
             "responsavel", 
             "localizacao", 

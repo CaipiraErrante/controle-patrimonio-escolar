@@ -1,0 +1,220 @@
+
+<main class="login-page">
+  <section class="login-layout">
+
+    <!-- Painel institucional -->
+    <aside class="institutional-panel">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M5 19L24 7L43 19" stroke="currentColor"
+              stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round"/>
+            <path d="M10 21V39H38V21" stroke="currentColor"
+              stroke-width="3" stroke-linejoin="round"/>
+            <path d="M19 39V27H29V39" stroke="currentColor"
+              stroke-width="3" stroke-linejoin="round"/>
+            <path d="M16 23H18M30 23H32" stroke="currentColor"
+              stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="brand-text">
+          <span class="brand-title">Patrimônio</span>
+          <span class="brand-subtitle">GESTÃO ESCOLAR</span>
+        </div>
+      </div>
+
+      <div class="institutional-content">
+        <span class="eyebrow">GESTÃO E ORGANIZAÇÃO</span>
+
+        <h1>
+          Cuidar do patrimônio
+          <span>é cuidar da escola.</span>
+        </h1>
+
+        <p>
+          Um ambiente para organizar, acompanhar e consultar
+          os bens patrimoniais da instituição de ensino.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature">
+            <span class="feature-check" aria-hidden="true">✓</span>
+            <span>Controle de bens patrimoniais</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-check" aria-hidden="true">✓</span>
+            <span>Organização por localização</span>
+          </div>
+
+          <div class="feature">
+            <span class="feature-check" aria-hidden="true">✓</span>
+            <span>Acompanhamento da conservação</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="institutional-footer">
+        SISTEMA DE CONTROLE DE PATRIMÔNIO ESCOLAR
+      </div>
+    </aside>
+
+    <!-- Formulário de acesso -->
+    <section class="form-panel">
+      <div class="form-container">
+
+        <div class="mobile-brand">
+          <div class="mobile-brand-icon" aria-hidden="true">P</div>
+          <span>Patrimônio Escolar</span>
+        </div>
+
+        <div class="form-heading">
+          <span class="form-label">ÁREA RESTRITA</span>
+          <h2>Acesse sua conta</h2>
+          <p>Informe seus dados para continuar.</p>
+        </div>
+
+        <form (ngSubmit)="entrar()" #formLogin="ngForm">
+
+          <div class="field-group">
+            <label for="usuario">Usuário</label>
+
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24"
+                fill="none" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"
+                  stroke="currentColor" stroke-width="1.8"/>
+                <path d="M4 21C4 16.6 7.6 14 12 14S20 16.6 20 21"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round"/>
+              </svg>
+
+              <input
+                id="usuario"
+                name="usuario"
+                type="text"
+                placeholder="Digite seu usuário"
+                [(ngModel)]="usuario"
+                required
+                autocomplete="username"
+                #campoUsuario="ngModel"
+              />
+            </div>
+
+            <span
+              class="field-error"
+              *ngIf="campoUsuario.invalid && campoUsuario.touched">
+              Informe seu usuário.
+            </span>
+          </div>
+
+          <div class="field-group">
+            <label for="senha">Senha</label>
+
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24"
+                fill="none" aria-hidden="true">
+                <rect x="5" y="10" width="14" height="11"
+                  rx="2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 10V7A4 4 0 0 1 16 7V10"
+                  stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round"/>
+              </svg>
+
+              <input
+                id="senha"
+                name="senha"
+                [type]="mostrarSenha ? 'text' : 'password'"
+                placeholder="Digite sua senha"
+                [(ngModel)]="senha"
+                required
+                autocomplete="current-password"
+                #campoSenha="ngModel"
+              />
+
+              <button
+                class="toggle-password"
+                type="button"
+                (click)="alternarSenha()"
+                [attr.aria-label]="mostrarSenha
+                  ? 'Ocultar senha'
+                  : 'Mostrar senha'"
+                [attr.aria-pressed]="mostrarSenha">
+
+                <svg *ngIf="!mostrarSenha" viewBox="0 0 24 24"
+                  fill="none" aria-hidden="true">
+                  <path d="M2 12S5.5 5 12 5S22 12 22 12
+                    S18.5 19 12 19S2 12 2 12Z"
+                    stroke="currentColor" stroke-width="1.8"/>
+                  <circle cx="12" cy="12" r="3"
+                    stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+
+                <svg *ngIf="mostrarSenha" viewBox="0 0 24 24"
+                  fill="none" aria-hidden="true">
+                  <path d="M3 3L21 21"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round"/>
+                  <path d="M10.6 5.2A10.5 10.5 0 0 1 12 5
+                    C18.5 5 22 12 22 12
+                    S20.7 14.6 18.5 16.5"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round"/>
+                  <path d="M6.2 6.3C3.4 8.3 2 12 2 12
+                    S5.5 19 12 19C13.4 19 14.7 18.7 15.8 18.1"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <span
+              class="field-error"
+              *ngIf="campoSenha.invalid && campoSenha.touched">
+              Informe sua senha.
+            </span>
+          </div>
+
+          <div
+            class="error-message"
+            [class.is-success]="loginConcluido"
+            *ngIf="mensagem"
+            role="alert">
+            <span aria-hidden="true">!</span>
+            <p>{{ mensagem }}</p>
+          </div>
+
+          <button class="login-button" type="submit" [disabled]="isSubmitting">
+            <span>{{ isSubmitting ? 'Entrando...' : 'Entrar no sistema' }}</span>
+            <svg viewBox="0 0 24 24" fill="none"
+              aria-hidden="true">
+              <path d="M5 12H19M12 5L19 12L12 19"
+                stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </form>
+
+        <div class="security-note">
+          <svg viewBox="0 0 24 24" fill="none"
+            aria-hidden="true">
+            <rect x="5" y="10" width="14" height="11"
+              rx="2" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M8 10V7A4 4 0 0 1 16 7V10"
+              stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+          <span>Acesso destinado aos usuários autorizados.</span>
+        </div>
+
+      </div>
+
+      <footer class="form-footer">
+        Controle de Patrimônio Escolar
+      </footer>
+    </section>
+
+  </section>
+</main>

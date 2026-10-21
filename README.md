@@ -45,12 +45,14 @@ Antes de iniciar, verifique se o ambiente atende aos itens abaixo:
 Na raiz do projeto, existe um arquivo `.env-example` com as variáveis usadas pelo PostgreSQL e pela aplicação:
 
 ```env
-POSTGRES_DB=djangodb
-POSTGRES_USER=django_user
-POSTGRES_PASSWORD=django_password
+POSTGRES_DB=patrimonio_escolar
+POSTGRES_USER=patrimonio_user
+POSTGRES_PASSWORD=uma-senha-forte-para-o-banco
+DJANGO_SECRET_KEY=uma-chave-aleatoria-e-secreta
+DEBUG=1
 ```
 
-Altere os valores e renomeie o arquivo para .env ***ANTES*** de realizar a instalação.
+Copie `.env-example` para `.env` e substitua os valores de `POSTGRES_PASSWORD` e `DJANGO_SECRET_KEY` por valores próprios e aleatórios antes de iniciar a aplicação. Não publique o arquivo `.env`.
 
 Essas informações também são usadas pelo arquivo `compose.yaml`.
 
@@ -105,6 +107,8 @@ python manage.py createsuperuser # comando do django para criar o superusuário
 > A aplicação estará disponível em `http://localhost` (porta `80`).
 
 > A API poderá ser consultada e testada em `http://localhost:8000`.
+
+> O inventário da interface usa `http://localhost/api/bens_moveis/`, encaminhado pelo Nginx para o endpoint Django `/bens_moveis/`. Operações de gravação exigem uma sessão autenticada com as permissões correspondentes.
 
 > A área de administração do Django poderá ser acessada em `http://localhost:8000/admin`.
 

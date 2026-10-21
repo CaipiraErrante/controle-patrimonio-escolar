@@ -1,0 +1,23 @@
+/* Estilos globais do sistema */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f4f6fb;
+  font-family: 'Sora', sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+/* You can add global styles to this file, and also import other style files */

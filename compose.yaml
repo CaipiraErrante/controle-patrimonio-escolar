@@ -20,11 +20,11 @@ services:
     env_file:
       - .env
     environment:
-      - POSTGRES_DB=${POSTGRES_DB}
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSTGRES_HOST=${POSTGRES_HOST}
-      - POSTGRES_PORT=${POSTGRES_PORT}
+      POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB in .env}
+      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER in .env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_HOST: ${POSTGRES_HOST:-db}
+      POSTGRES_PORT: ${POSTGRES_PORT:-5432}
 
   backend:
     build:
@@ -40,11 +40,12 @@ services:
     env_file:
       - .env
     environment:
-      - DJANGO_DEBUG=${DJANGO_DEBUG}
+      DEBUG: ${DEBUG:-${DJANGO_DEBUG:-0}}
     depends_on:
       - db
-    command: >
-      sh -lc "chmod +x /app/scripts/commands.sh && /app/scripts/commands.sh"
+
+    command: ["sh", "/app/scripts/commands.sh"]
+
 
 volumes:
   postgres_data:

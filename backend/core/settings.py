@@ -10,8 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ge$w_fa_jr!nfsg8nvb30oym(=+_k&-r&9+ko_f#_%%7u6#a^u'
+SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', ''))
+DEBUG = os.environ.get("DEBUG", os.environ.get("DJANGO_DEBUG", "0")) == "1"
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'backend']
+CSRF_TRUSTED_ORIGINS = ['http://localhost:4200', 'http://127.0.0.1:4200']
 
 # Application definition
 
@@ -86,11 +87,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get('POSTGRES_DB', ''),
-        "USER": os.environ.get('POSTGRES_USER', ''),
-        "PASSWORD": os.environ.get('POSTGRES_PASSWORD', ''),
-        "HOST": os.environ.get('POSTGRES_HOST', ''),
-        "PORT": os.environ.get('POSTGRES_PORT', ''),
+        "NAME": os.environ["POSTGRES_DB"],
+        "USER": os.environ["POSTGRES_USER"],
+        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
+        "HOST": os.environ.get("POSTGRES_HOST", "db"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
         # "OPTIONS": {
         #     "service": "my_service",
         #     "passfile": ".my_pgpass",
