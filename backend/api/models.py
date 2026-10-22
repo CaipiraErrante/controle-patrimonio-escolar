@@ -3,9 +3,10 @@ from django.db import models
 # Create your models here.
 
 class BensAbstract(models.Model):
-    codigoPatrimonio = models.CharField(max_length=50)
+    id = models.IntegerField(primary_key=True, auto_created=True)
+    numeroPatrimonio = models.CharField(max_length=50)
     descricao = models.TextField()      
-    responsavel = models.CharField(max_length=30)
+    responsavel = models.CharField(max_length=30)    
 
     class Meta: 
         db_table = "BensAbstract"

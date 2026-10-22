@@ -15,7 +15,7 @@ ENV PYTHONUNBUFFERED=1
 COPY . /app/
 
 # Instala as dependências
-RUN pip install --no-cache-dir -r requdocker compose up -d db backenddocker compose up -d db backendirements.txt && \
+RUN pip install --no-cache-dir -r requirements.txt && \
     chmod +x /app/scripts/commands.sh
 
 CMD ["sh", "/app/scripts/commands.sh"]

@@ -14,8 +14,8 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ["url", "name"]
 
 class BensMoveisSerializer(serializers.HyperlinkedModelSerializer):
-    id = serializers.IntegerField(read_only=True)
-    numeroPatrimonio = serializers.CharField(source="codigoPatrimonio")
+    # id = serializers.IntegerField(read_only=True)
+    # numeroPatrimonio = serializers.CharField(source="codigoPatrimonio")
 
     class Meta:
         model = BensMoveis
@@ -32,8 +32,9 @@ class BensImoveisSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = BensImoveis
         fields = [ 
-            "url", 
-            "codigoPatrimonio", 
+            "url",
+            "id", 
+            "numeroPatrimonio", 
             "descricao",       
             "responsavel", 
             "localizacao", 
@@ -44,8 +45,9 @@ class BensSemoventesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = BensSemoventes
         fields = [ 
-            "url", 
-            "codigoPatrimonio", 
+            "url",
+            "id", 
+            "numeroPatrimonio", 
             "descricao",       
             "responsavel", 
             "dataNascimento", 
@@ -57,7 +59,8 @@ class BensImateriaisSerializer(serializers.HyperlinkedModelSerializer):
         model = BensImateriais
         fields = [ 
             "url", 
-            "codigoPatrimonio", 
+            "id",
+            "numeroPatrimonio", 
             "descricao",       
             "responsavel", 
             "dataOrigem", 

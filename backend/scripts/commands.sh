@@ -12,7 +12,5 @@ echo "Banco de dados pronto! Iniciando rotinas do Django..."
 # python manage.py collectstatic --noinput
 python manage.py makemigrations --noinput
 python manage.py migrate --noinput
-python manage.py shell -c "from django.contrib.auth import get_user_model; from rest_framework.authtoken.models import Token; import os; user = get_user_model().objects.order_by('id').first(); token = os.environ.get('DEBEZIUM_AUTH_TOKEN'); assert user and token, 'Usuário Django e DEBEZIUM_AUTH_TOKEN são necessários'; Token.objects.update_or_create(user=user, defaults={'key': token})"
-
 echo "Iniciando o servidor de desenvolvimento..."
 python manage.py runserver 0.0.0.0:8000

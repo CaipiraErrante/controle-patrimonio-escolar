@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG", os.environ.get("DJANGO_DEBUG", "0")) == "1"
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', 'False') == 'True')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'backend']
 CSRF_TRUSTED_ORIGINS = ['http://localhost:4200', 'http://127.0.0.1:4200']
@@ -87,11 +87,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["POSTGRES_DB"],
-        "USER": os.environ["POSTGRES_USER"],
-        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
-        "HOST": os.environ.get("POSTGRES_HOST", "db"),
-        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
+        "NAME": os.environ.get("POSTGRES_DB"),
+        "USER": os.environ.get("POSTGRES_USER"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
+        "HOST": os.environ.get("POSTGRES_HOST"),
+        "PORT": os.environ.get("POSTGRES_PORT"),
         # "OPTIONS": {
         #     "service": "my_service",
         #     "passfile": ".my_pgpass",

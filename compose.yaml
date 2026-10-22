@@ -20,11 +20,11 @@ services:
     env_file:
       - .env
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB in .env}
-      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER in .env}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
-      POSTGRES_HOST: ${POSTGRES_HOST:-db}
-      POSTGRES_PORT: ${POSTGRES_PORT:-5432}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_PORT: ${POSTGRES_PORT}
 
   backend:
     build:
@@ -40,7 +40,7 @@ services:
     env_file:
       - .env
     environment:
-      DEBUG: ${DEBUG:-${DJANGO_DEBUG:-0}}
+      DJANGO_DEBUG: ${DJANGO_DEBUG}
     depends_on:
       - db
 
