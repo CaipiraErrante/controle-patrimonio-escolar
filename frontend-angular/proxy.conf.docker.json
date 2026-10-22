@@ -1,0 +1,12 @@
+{
+  "/_allauth": {
+    "target": "http://backend:8000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/api": {
+    "target": "http://backend:8000",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

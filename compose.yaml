@@ -1,17 +1,18 @@
 services:
   frontend:
     build:
-      context: ./frontend
+      context: ./frontend-angular
       dockerfile: Dockerfile
-    image: frontend:v1.0.0
+    image: frontend:v2.0.0
     container_name: frontend
     restart: unless-stopped
     volumes:
-      - ./frontend:/usr/share/nginx/html
+      - ./frontend-angular:/app
+      - /app/node_modules
     depends_on:
       - backend    
     ports:
-      - "80:80"
+      - "80:4200"
 
   db:
     image: postgres:18

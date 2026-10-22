@@ -26,7 +26,12 @@ SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', 'False') == 'True')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'backend']
-CSRF_TRUSTED_ORIGINS = ['http://localhost:4200', 'http://127.0.0.1:4200']
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost',
+    'http://127.0.0.1',
+    'http://localhost:4200',
+    'http://127.0.0.1:4200',
+]
 
 # Application definition
 

@@ -1,142 +1,219 @@
-# Sistema de Controle de Patrimônio
+# Sistema de Controle de Patrimônio Escolar
 
-Trabalho focado no desenvolvimento de um sistema completo (Fullstack) para gerenciamento de patrimônios e bens materiais de uma instituição de ensino.
+Aplicação full-stack, open source e em desenvolvimento para cadastro e gestão
+dos bens patrimoniais de uma instituição de ensino. O objetivo é permitir
+consultar, cadastrar, editar e excluir bens, acompanhando seus dados,
+localização, estado de conservação e responsáveis.
 
-## Objetivo
+> O frontend Angular está em desenvolvimento. A tela de login já está
+> integrada ao Django Allauth; as telas de inventário ainda serão integradas
+> às APIs de negócio.
 
-O sistema tem como objetivo permitir a realização de cadastro, visualização, atualização e exclusão (operações CRUD) de itens de patrimônio, mantendo o controle sobre as localizações, estados de conservação e respectivos responsáveis por cada bem.
+## Tecnologias e serviços
 
-## Tecnologias Utilizadas
+O ambiente local é composto por três serviços executados com Docker Compose:
 
-### Frontend
+| Serviço | Tecnologia | Responsabilidade |
+| --- | --- | --- |
+| `frontend` | Angular 22, TypeScript 6, Node.js 22 e Angular CLI | Aplicação web e servidor de desenvolvimento com recarga automática. |
+| `backend` | Python 3.14, Django 6.1, Django REST Framework e Django Allauth | APIs de negócio, autenticação e administração. |
+| `db` | PostgreSQL 18 | Persistência relacional. |
 
-* **Angular:** Framework para desenvolvimento web em typescript.
+Os serviços não são microserviços independentes: são os componentes da
+arquitetura da aplicação, orquestrados localmente pelo Docker Compose. O código
+do frontend e do backend é montado como bind mount durante o desenvolvimento.
 
-### Backend
+## Documentação das tecnologias
 
-* **Django:** Framework python utilizado para a API (Django REST_framework) e controle de usuários (AllAuth).
+- [Angular](https://angular.dev/overview)
+- [Angular CLI](https://angular.dev/tools/cli)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [Node.js](https://nodejs.org/docs/latest/api/)
+- [npm](https://docs.npmjs.com/)
+- [Python](https://docs.python.org/3/)
+- [Django](https://docs.djangoproject.com/en/6.1/)
+- [Django REST Framework](https://www.django-rest-framework.org/)
+- [Django Allauth — Headless](https://docs.allauth.org/en/latest/headless/)
+- [Especificação OpenAPI do Allauth Headless](https://docs.allauth.org/en/latest/headless/openapi-specification/)
+- [PostgreSQL](https://www.postgresql.org/docs/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Docker Desktop para Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
+- [Docker Engine para Linux](https://docs.docker.com/engine/install/)
 
-### Base da Dados
+## Pré-requisitos
 
-* **PostgreSQL:** Banco de dados relacional escolhido para armazenamento.
+Para executar a aplicação pelo caminho recomendado, instale:
 
-## Arquitetura do Backend
+- Git;
+- Docker com Docker Compose;
+- navegador web.
 
-A API foi desenvolvida no padrão MVC, separando  as responsabilidades do código seguindo boas práticas de engenharia de software:
+Para executar o Angular diretamente no workstation, instale também Node.js 22
+e npm 11. Não é necessário instalar Python ou PostgreSQL para o modo
+Docker Compose.
 
-* **Controllers:** Camada de entrada (Endpoints). Recebem as requisições HTTP do frontend, chamam os serviços necessários e retornam as respostas.
-* **Services:** Camada de negócio. Contêm as regras e lógicas específicas da aplicação.
-* **Repositories:** Camada de dados (Padrão Repository). Centralizam as consultas e escritas no banco de dados, isolando o `AppDbContext` do restante da aplicação.
-* **Models:** Entidades que representam as tabelas do banco de dados (`Usuario`, `Patrimonio`).
+### Windows
 
-## Como Executar o Projeto
+1. Instale o [Docker Desktop](https://docs.docker.com/desktop/setup/install/windows-install/)
+   e habilite o backend WSL 2.
+2. Instale o Git.
+3. Para executar o Angular fora do Docker, instale Node.js 22.
+4. Clone o repositório e abra a pasta do projeto no PowerShell ou no terminal
+   WSL.
 
-### 1. Requisitos
+### Linux
 
-Antes de iniciar, verifique se o ambiente atende aos itens abaixo:
+1. Instale Git e [Docker Engine](https://docs.docker.com/engine/install/) com o
+   plugin Docker Compose.
+2. Configure as permissões para executar Docker conforme a documentação da
+   distribuição.
+3. Para executar o Angular fora do Docker, instale Node.js 22.
+4. Clone o repositório e abra a pasta do projeto em um terminal.
 
-* Docker e Docker Compose instalados
-* Acesso ao navegador para abrir a interface do sistema
-* Python 3.14.4
-* UV (Gestor de pacotes e ambiente virtual python)
+## Configuração e execução com Docker Compose
 
-### 2. Variáveis de ambiente
+Os comandos a seguir são executados na raiz do repositório.
 
-Na raiz do projeto, existe um arquivo `.env-example` com as variáveis usadas pelo PostgreSQL e pela aplicação:
+1. Crie o arquivo `.env` a partir do exemplo.
 
-```env
-POSTGRES_DB=patrimonio_escolar
-POSTGRES_USER=patrimonio_user
-POSTGRES_PASSWORD=uma-senha-forte-para-o-banco
-DJANGO_SECRET_KEY=uma-chave-aleatoria-e-secreta
-DEBUG=1
-```
+   **PowerShell:**
 
-Copie `.env-example` para `.env` e substitua os valores de `POSTGRES_PASSWORD` e `DJANGO_SECRET_KEY` por valores próprios e aleatórios antes de iniciar a aplicação. Não publique o arquivo `.env`.
+   ```powershell
+   Copy-Item .env-example .env
+   ```
 
-Essas informações também são usadas pelo arquivo `compose.yaml`.
+   **Linux, WSL ou Git Bash:**
 
-### 3. Rodando com Docker Compose
+   ```bash
+   cp .env-example .env
+   ```
 
-A partir da raiz do projeto, execute:
+2. Edite `.env` e defina uma senha de banco e uma chave secreta próprias.
+   Não compartilhe nem publique esse arquivo.
+3. Construa as imagens e inicie os serviços:
+
+   ```bash
+   docker compose up --build -d
+   ```
+
+   Na primeira execução, o comando instala as dependências. O frontend usa
+   bind mount para refletir alterações locais sem rebuild. Se as dependências
+   do Angular mudarem em `package.json` ou `package-lock.json`, reconstrua a
+   imagem com:
+
+   ```bash
+   docker compose up --build -d frontend
+   ```
+
+4. Confira o estado e os logs:
+
+   ```bash
+   docker compose ps
+   docker compose logs -f backend
+   docker compose logs -f frontend
+   ```
+
+5. Acesse:
+
+   - Aplicação Angular: [http://localhost](http://localhost)
+   - API Django e interface navegável do REST Framework:
+     [http://localhost:8000](http://localhost:8000)
+   - Administração Django: [http://localhost:8000/admin/](http://localhost:8000/admin/)
+
+As migrações do banco são executadas ao iniciar o backend. Para criar um
+superusuário administrativo:
 
 ```bash
-docker compose up --build -d
+docker compose exec backend python manage.py createsuperuser
 ```
 
-Esse comando vai criar e iniciar:
-
-* container do PostgreSQL na porta `5432`
-* container do backend na porta `8000`
-* container do frontend reservado para as portas `80` e `443`
-
-Para verificar se os containers estão ativos:
-
-```bash
-docker compose ps
-```
-
-Para acompanhar os logs da API:
-
-```bash
-docker compose logs -f backend
-```
-
-Para parar os containers:
+Para parar os serviços sem remover os dados do banco:
 
 ```bash
 docker compose down
 ```
 
-Para reiniciar os containers:
+O volume `postgres_data` persiste os dados entre reinicializações.
+
+## Desenvolvimento do Angular diretamente no workstation (opcional)
+
+É possível executar o backend e o banco no Docker e o servidor Angular
+diretamente no Windows ou Linux. Primeiro, configure `.env` conforme a seção
+anterior e inicie o backend e o banco:
 
 ```bash
-docker compose up -d --force-recreate
+docker compose up --build -d backend
 ```
 
-Para criar uma conta de superusuário:
+Esse comando também inicia o serviço `db`, exigido pelo backend. Em outro
+terminal, na raiz do projeto, instale as dependências e inicie o Angular:
 
 ```bash
-docker compose exec -it backend sh # para acessar o container do backend
-
-python manage.py createsuperuser # comando do django para criar o superusuário
+cd frontend-angular
+npm ci
+npm start -- --proxy-config proxy.conf.local.json
 ```
 
-### 4. Se tudo correr bem:
+Abra [http://localhost:4200](http://localhost:4200). O proxy local encaminha
+as requisições do Allauth para o backend em `localhost:8000`. As alterações no
+código Angular são recarregadas automaticamente.
 
-> A aplicação estará disponível em `http://localhost` (porta `80`).
+## APIs e rotas
 
-> A API poderá ser consultada e testada em `http://localhost:8000`.
+### Django REST Framework — API de negócio
 
-> O inventário da interface usa `http://localhost/api/bens_moveis/`, encaminhado pelo Nginx para o endpoint Django `/bens_moveis/`. Operações de gravação exigem uma sessão autenticada com as permissões correspondentes.
+As rotas do DRF são incluídas na raiz do backend, sem prefixo `/api/`. A
+interface navegável do DRF está disponível em
+[http://localhost:8000](http://localhost:8000). Recursos registrados:
 
-> A área de administração do Django poderá ser acessada em `http://localhost:8000/admin`.
+| Recurso | Endpoint |
+| --- | --- |
+| Usuários | `/users/` |
+| Grupos | `/groups/` |
+| Bens móveis | `/bens_moveis/` |
+| Bens imóveis | `/bens_imoveis/` |
+| Bens semoventes | `/bens_semoventes/` |
+| Bens imateriais | `/bens_imateriais/` |
 
-### 5. Ambiente de desenvolvimento:
+Por exemplo, a lista de bens móveis pode ser consultada em
+[http://localhost:8000/bens_moveis/](http://localhost:8000/bens_moveis/).
+Os endpoints dos recursos exigem autenticação. A interface browsable também
+disponibiliza os endpoints de sessão em `/api-auth/`.
 
-As instruções dos itens 3 e 4 são suficientes para a instalação do sistema em máquina local para avaliação e testes.
+### Django Allauth — autenticação Headless
 
-Para desenvolvimento, é recomendável configurar um ambiente virtual com alguma ferramenta como o pip (padrão do python) ou uv (recomendado) para facilitar o desenvolvimento.
+As rotas Headless estão sob `/_allauth/`. O frontend acessa a API Browser em:
 
-O Docker `compose.yaml` foi configurado com o uso de volumes "bind mount" para faciliar o desenvolvimento (não é recessário recompilar as imagens ao fazer alterações nos arquivos locais).
+- `GET /_allauth/browser/v1/config` — configuração da autenticação e cookie
+  CSRF;
+- `POST /_allauth/browser/v1/auth/login` — login com usuário e senha.
 
-**Para o backend:**
+Com o Compose, o endereço de configuração é
+[http://localhost/_allauth/browser/v1/config](http://localhost/_allauth/browser/v1/config).
+Consulte a [documentação Headless](https://docs.allauth.org/en/latest/headless/)
+e a [especificação OpenAPI](https://docs.allauth.org/en/latest/headless/openapi-specification/)
+para os demais endpoints e formatos.
 
-As dependências do python (para o backend, por hora) estão fixadas no arqvivo `requirements.txt`.
+## Testes e build do frontend
 
-**Para o frontend:**
+Na pasta `frontend-angular`:
 
-O sistema utiliza duas API's: Uma para os dados do negócio (gestão de bens patrimoniais) e outra exclusiva para autenticação e controle de acesso aos recursos do sistema pelos usuários.
+```bash
+npm test
+npm run build
+```
 
-As especificações da API dos dados do negócio podem ser consultadas na própria aplicação, no endereço `http://localhost:8000`
+## Estrutura do repositório
 
-Já as especificações da API dos usuários estão publicadas em: https://docs.allauth.org/en/latest/headless/openapi-specification/
+```text
+backend/             API Django, configuração e migrações
+frontend-angular/    aplicação Angular
+compose.yaml         serviços locais do frontend, backend e banco
+.env-example         modelo de variáveis de ambiente
+```
 
-## 👥 Funcionalidades Implementadas:
+## Contribuições
 
-* [x] Interface moderna e responsiva (Login, Inventário e Formulário de Cadastro).
-* [x] Autenticação básica via banco de dados.
-* [x] Leitura e Listagem dinâmica dos patrimônios do banco.
-* [x] Criação de novos patrimônios.
-* [x] Edição de patrimônios existentes (reutilizando a tela de cadastro).
-* [x] Exclusão de itens diretamente do inventário.
+Contribuições são bem-vindas. Antes de abrir uma alteração, descreva o
+problema ou a melhoria, mantenha as credenciais fora do repositório e execute
+os testes relevantes para as partes modificadas.
