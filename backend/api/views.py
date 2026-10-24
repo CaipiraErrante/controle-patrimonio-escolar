@@ -11,7 +11,7 @@ class UserViewSet(viewsets.ModelViewSet):
 
     queryset = User.objects.all().order_by("-date_joined")
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAdminUser]
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -21,25 +21,25 @@ class GroupViewSet(viewsets.ModelViewSet):
 
     queryset = Group.objects.all().order_by("name")
     serializer_class = GroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAdminUser]
 
 
 class BensMoveisViewSet(viewsets.ModelViewSet):
     queryset = BensMoveis.objects.all()
     serializer_class = BensMoveisSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.DjangoModelPermissions]
 
 class BensImoveisViewSet(viewsets.ModelViewSet):
     queryset = BensImoveis.objects.all()
     serializer_class = BensImoveisSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.DjangoModelPermissions]
 
 class BensSemoventesViewSet(viewsets.ModelViewSet):
     queryset = BensSemoventes.objects.all()
     serializer_class = BensSemoventesSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.DjangoModelPermissions]
 
 class BensImateriaisViewSet(viewsets.ModelViewSet):
     queryset = BensImateriais.objects.all()
     serializer_class = BensImateriaisSerializer
-    permission_classes = [permissions.IsAuthenticated]  
+    permission_classes = [permissions.DjangoModelPermissions]

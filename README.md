@@ -5,9 +5,9 @@ dos bens patrimoniais de uma instituição de ensino. O objetivo é permitir
 consultar, cadastrar, editar e excluir bens, acompanhando seus dados,
 localização, estado de conservação e responsáveis.
 
-> O frontend Angular está em desenvolvimento. A tela de login já está
-> integrada ao Django Allauth; as telas de inventário ainda serão integradas
-> às APIs de negócio.
+> O frontend Angular inclui login com Django Allauth e telas para consultar,
+> cadastrar, editar e excluir as quatro categorias de patrimônio disponíveis
+> na API.
 
 ## Tecnologias e serviços
 
@@ -177,8 +177,18 @@ interface navegável do DRF está disponível em
 
 Por exemplo, a lista de bens móveis pode ser consultada em
 [http://localhost:8000/bens_moveis/](http://localhost:8000/bens_moveis/).
-Os endpoints dos recursos exigem autenticação. A interface browsable também
-disponibiliza os endpoints de sessão em `/api-auth/`.
+Os endpoints de patrimônio exigem autenticação e permissões de modelo do
+Django. A interface browsable também disponibiliza os endpoints de sessão em
+`/api-auth/`. Os endpoints `/users/` e `/groups/` são restritos a usuários
+administrativos (`is_staff`).
+
+## Permissões do inventário
+
+A API usa as permissões padrão de modelo do Django para os bens. Conceda aos
+usuários ou grupos as permissões `view`, `add`, `change` e `delete` para cada
+categoria necessária. O usuário administrativo criado com `createsuperuser`
+pode atribuir essas permissões no Django Admin, em **Authentication and
+Authorization → Groups** ou **Users**.
 
 ### Django Allauth — autenticação Headless
 
@@ -186,7 +196,9 @@ As rotas Headless estão sob `/_allauth/`. O frontend acessa a API Browser em:
 
 - `GET /_allauth/browser/v1/config` — configuração da autenticação e cookie
   CSRF;
-- `POST /_allauth/browser/v1/auth/login` — login com usuário e senha.
+- `POST /_allauth/browser/v1/auth/login` — login com usuário e senha;
+- `GET /_allauth/browser/v1/auth/session` — consulta o estado da sessão;
+- `DELETE /_allauth/browser/v1/auth/session` — encerra a sessão.
 
 Com o Compose, o endereço de configuração é
 [http://localhost/_allauth/browser/v1/config](http://localhost/_allauth/browser/v1/config).
@@ -194,15 +206,20 @@ Consulte a [documentação Headless](https://docs.allauth.org/en/latest/headless
 e a [especificação OpenAPI](https://docs.allauth.org/en/latest/headless/openapi-specification/)
 para os demais endpoints e formatos.
 
-## Testes e build do frontend
+## Testes
 
-Na pasta `frontend-angular`:
+Na pasta `frontend-angular`, execute os testes e o build:
 
 ```bash
 npm test
 npm run build
 ```
 
+Com os serviços Docker Compose em execução, execute os testes do backend:
+
+```bash
+docker compose exec backend python manage.py test
+```
 ## Estrutura do repositório
 
 ```text

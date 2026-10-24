@@ -53,6 +53,25 @@ describe('AuthService', () => {
     await expect(loginPromise).resolves.toBeUndefined();
   });
 
+  it('checks the current Allauth browser session', async () => {
+    const sessionPromise = service.isAuthenticated();
+    const request = http.expectOne('/_allauth/browser/v1/auth/session');
+    expect(request.request.method).toBe('GET');
+    expect(request.request.withCredentials).toBe(true);
+    request.flush({ meta: { is_authenticated: true } });
+    await expect(sessionPromise).resolves.toBe(true);
+  });
+
+  it('logs out through the Allauth browser session endpoint', async () => {
+    const logoutPromise = service.logout();
+    const request = http.expectOne('/_allauth/browser/v1/auth/session');
+    expect(request.request.method).toBe('DELETE');
+    expect(request.request.headers.get('X-CSRFToken')).toBe('test-csrf-token');
+    expect(request.request.withCredentials).toBe(true);
+    request.flush({ data: {}, meta: { is_authenticated: false } }, { status: 401, statusText: 'Unauthorized' });
+    await expect(logoutPromise).resolves.toBeUndefined();
+  });
+
   it('stops before login when the CSRF cookie is unavailable', async () => {
     document.cookie =
       'csrftoken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';

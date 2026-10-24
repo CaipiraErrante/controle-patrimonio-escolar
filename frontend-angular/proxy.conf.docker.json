@@ -1,12 +1,9 @@
 {
-  "/_allauth": {
-    "target": "http://backend:8000",
-    "secure": false,
-    "changeOrigin": true
-  },
-  "/api": {
-    "target": "http://backend:8000",
-    "secure": false,
-    "changeOrigin": true
-  }
+  "/_allauth": { "target": "http://backend:8000", "secure": false, "changeOrigin": true },
+  "/users": { "target": "http://backend:8000", "secure": false, "changeOrigin": true },
+  "/groups": { "target": "http://backend:8000", "secure": false, "changeOrigin": true },
+  "/bens_moveis": { "target": "http://backend:8000", "secure": false, "changeOrigin": true },
+  "/bens_imoveis": { "target": "http://backend:8000", "secure": false, "changeOrigin": true },
+  "/bens_semoventes": { "target": "http://backend:8000", "secure": false, "changeOrigin": true },
+  "/bens_imateriais": { "target": "http://backend:8000", "secure": false, "changeOrigin": true }
 }

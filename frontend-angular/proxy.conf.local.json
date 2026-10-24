@@ -1,7 +1,9 @@
 {
-  "/_allauth": {
-    "target": "http://localhost:8000",
-    "secure": false,
-    "changeOrigin": true
-  }
+  "/_allauth": { "target": "http://localhost:8000", "secure": false, "changeOrigin": true },
+  "/users": { "target": "http://localhost:8000", "secure": false, "changeOrigin": true },
+  "/groups": { "target": "http://localhost:8000", "secure": false, "changeOrigin": true },
+  "/bens_moveis": { "target": "http://localhost:8000", "secure": false, "changeOrigin": true },
+  "/bens_imoveis": { "target": "http://localhost:8000", "secure": false, "changeOrigin": true },
+  "/bens_semoventes": { "target": "http://localhost:8000", "secure": false, "changeOrigin": true },
+  "/bens_imateriais": { "target": "http://localhost:8000", "secure": false, "changeOrigin": true }
 }

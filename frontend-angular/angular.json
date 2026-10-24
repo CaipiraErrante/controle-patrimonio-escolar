@@ -56,7 +56,7 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "options": {
-            "proxyConfig": "src/proxy.conf.dockerjson"
+            "proxyConfig": "proxy.conf.local.json"
           },
           "configurations": {
             "production": {

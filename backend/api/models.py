@@ -3,7 +3,6 @@ from django.db import models
 # Create your models here.
 
 class BensAbstract(models.Model):
-    id = models.IntegerField(primary_key=True, auto_created=True)
     numeroPatrimonio = models.CharField(max_length=50)
     descricao = models.TextField()      
     responsavel = models.CharField(max_length=30)    

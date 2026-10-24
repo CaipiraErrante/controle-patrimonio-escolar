@@ -1,0 +1,132 @@
+<header class="inventory-topbar">
+  <a class="brand" routerLink="/patrimonios" aria-label="Patrimônio escolar">
+    <span class="brand-mark" aria-hidden="true">P</span>
+    <span>Patrimônio Escolar</span>
+  </a>
+  <button class="sign-out" type="button" [disabled]="isSigningOut" (click)="signOut()">
+    {{ isSigningOut ? 'Saindo...' : 'Sair' }}
+  </button>
+</header>
+
+<main class="inventory-page">
+  <section class="page-heading">
+    <div>
+      <p class="eyebrow">GESTÃO PATRIMONIAL</p>
+      <h1>Patrimônios da escola</h1>
+      <p>Cadastre, consulte, atualize e remova os bens da instituição.</p>
+    </div>
+  </section>
+
+  <div class="notice" *ngIf="mensagem" [class.is-error]="isError" role="status" aria-live="polite">
+    {{ mensagem }}
+  </div>
+
+  <section class="workspace-grid">
+    <form class="asset-form" (ngSubmit)="save()" #assetForm="ngForm">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">{{ editingId === null ? 'NOVO CADASTRO' : 'EDIÇÃO' }}</p>
+          <h2>{{ editingId === null ? 'Cadastrar patrimônio' : 'Editar patrimônio' }}</h2>
+        </div>
+      </div>
+
+      <label for="asset-kind">Tipo de bem</label>
+      <select id="asset-kind" name="formKind" [(ngModel)]="formKind" (ngModelChange)="changeFormKind()">
+        <option *ngFor="let option of kinds" [ngValue]="option.value">{{ option.label }}</option>
+      </select>
+
+      <label for="asset-number">Número patrimonial</label>
+      <input id="asset-number" name="numeroPatrimonio" [(ngModel)]="form.numeroPatrimonio" required maxlength="50" autocomplete="off" />
+
+      <label for="asset-description">Descrição</label>
+      <textarea id="asset-description" name="descricao" [(ngModel)]="form.descricao" required rows="3"></textarea>
+
+      <label for="asset-owner">Responsável</label>
+      <input id="asset-owner" name="responsavel" [(ngModel)]="form.responsavel" required maxlength="30" />
+
+      <ng-container *ngIf="usesLocationAndCondition">
+        <label for="asset-location">Localização</label>
+        <input id="asset-location" name="localizacao" [(ngModel)]="form.localizacao" required maxlength="20" />
+
+        <label for="asset-condition">Estado de conservação</label>
+        <input id="asset-condition" name="estado" [(ngModel)]="form.estado" required maxlength="10" />
+      </ng-container>
+
+      <ng-container *ngIf="usesBirthDate">
+        <label for="asset-birth-date">Data de nascimento</label>
+        <input id="asset-birth-date" name="dataNascimento" type="date" [(ngModel)]="form.dataNascimento" required />
+
+        <label for="asset-animal-condition">Estado de conservação</label>
+        <input id="asset-animal-condition" name="estado" [(ngModel)]="form.estado" required maxlength="10" />
+      </ng-container>
+
+      <ng-container *ngIf="usesOriginAndAuthor">
+        <label for="asset-origin-date">Data de origem</label>
+        <input id="asset-origin-date" name="dataOrigem" type="date" [(ngModel)]="form.dataOrigem" required />
+
+        <label for="asset-author">Autor</label>
+        <input id="asset-author" name="autor" [(ngModel)]="form.autor" required maxlength="30" />
+      </ng-container>
+
+      <div class="form-actions">
+        <button class="primary-button" type="submit" [disabled]="assetForm.invalid || isSaving">
+          {{ isSaving ? 'Salvando...' : editingId === null ? 'Cadastrar bem' : 'Salvar alterações' }}
+        </button>
+        <button *ngIf="editingId !== null" class="secondary-button" type="button" (click)="cancelEdit()">Cancelar</button>
+      </div>
+    </form>
+
+    <section class="inventory-list" aria-labelledby="inventory-list-title">
+      <div class="list-heading">
+        <div>
+          <p class="eyebrow">INVENTÁRIO</p>
+          <h2 id="inventory-list-title">{{ listTitle }}</h2>
+        </div>
+        <div class="list-controls">
+          <div class="filter-control">
+            <label for="inventory-filter">Filtrar tipo</label>
+            <select id="inventory-filter" name="inventoryFilter" [(ngModel)]="listFilter" (ngModelChange)="changeListFilter()">
+              <option [ngValue]="'all'">Todos os tipos</option>
+              <option *ngFor="let option of kinds" [ngValue]="option.value">{{ option.label }}</option>
+            </select>
+          </div>
+          <button class="secondary-button refresh-button" type="button" (click)="loadItems()" [disabled]="isLoading">
+            {{ isLoading ? 'Carregando...' : 'Atualizar lista' }}
+          </button>
+        </div>
+      </div>
+
+      <p class="empty-state" *ngIf="!isLoading && items.length === 0">Nenhum bem cadastrado para este filtro.</p>
+
+      <div class="table-scroll" *ngIf="items.length > 0">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Número</th>
+              <th>Descrição</th>
+              <th>Responsável</th>
+              <th>Detalhe</th>
+              <th>Estado / autor</th>
+              <th><span class="visually-hidden">Ações</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of items">
+              <td data-label="Tipo">{{ kindLabel(item.kind) }}</td>
+              <td data-label="Número">{{ item.numeroPatrimonio }}</td>
+              <td data-label="Descrição">{{ item.descricao }}</td>
+              <td data-label="Responsável">{{ item.responsavel }}</td>
+              <td data-label="Detalhe">{{ itemDetail(item) }}</td>
+              <td data-label="Estado / autor">{{ itemStatus(item) }}</td>
+              <td class="row-actions">
+                <button class="text-button" type="button" (click)="edit(item)">Editar</button>
+                <button class="text-button danger" type="button" (click)="remove(item)">Excluir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+</main>
