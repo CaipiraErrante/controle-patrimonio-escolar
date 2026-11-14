@@ -30,12 +30,17 @@ DEBUG = os.environ.get("DEBUG", os.environ.get("DJANGO_DEBUG", "0")).lower() in 
 }
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'backend']
+FRONTEND_PORT = os.environ.get('FRONTEND_PORT', '8080')
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost',
+    f'http://localhost:{FRONTEND_PORT}',
     'http://127.0.0.1',
+    f'http://127.0.0.1:{FRONTEND_PORT}',
     'http://localhost:4200',
     'http://127.0.0.1:4200',
 ]
+
+ACCOUNT_LOGIN_METHODS = {'username', 'email'}
 
 # Application definition
 

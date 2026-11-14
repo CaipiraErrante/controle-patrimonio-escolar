@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 echo "Banco de dados MySQL pronto! Iniciando rotinas do Django..."
 

@@ -69,7 +69,8 @@ docker compose ps
 docker compose logs -f backend
 ```
 
-A aplicação fica em `http://localhost`, a API Django em
+A aplicação fica em `http://localhost:8080` por padrão (configure
+`FRONTEND_PORT` no `.env` para usar outra porta), a API Django em
 `http://localhost:8000` e o Django Admin em `http://localhost:8000/admin/`.
 Para criar um usuário administrador:
 

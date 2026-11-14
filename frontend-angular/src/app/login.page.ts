@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -36,7 +36,7 @@ function getAllauthErrorCode(error: HttpErrorResponse): string | undefined {
   templateUrl: './login.page.html',
   styleUrl: './login.page.css',
 })
-export class LoginPage {
+export class LoginPage implements OnInit {
   private readonly authService = inject(AuthService);
   private readonly router = inject(Router);
 
@@ -47,6 +47,18 @@ export class LoginPage {
   mensagem = '';
   isSubmitting = false;
   loginConcluido = false;
+
+  ngOnInit(): void {
+    void this.authService
+      .isAuthenticated()
+      .then((authenticated) => {
+        if (authenticated) {
+          return this.router.navigateByUrl('/patrimonios');
+        }
+        return undefined;
+      })
+      .catch(() => undefined);
+  }
 
   alternarSenha(): void {
     this.mostrarSenha = !this.mostrarSenha;
@@ -69,7 +81,9 @@ export class LoginPage {
       await this.router.navigateByUrl('/patrimonios');
     } catch (error) {
       if (error instanceof HttpErrorResponse) {
-        if (error.status === 0) {
+        if (error.status === 409) {
+          await this.router.navigateByUrl('/patrimonios');
+        } else if (error.status === 0) {
           this.mensagem = 'Não foi possível conectar ao servidor.';
         } else if (
           error.status === 400 &&

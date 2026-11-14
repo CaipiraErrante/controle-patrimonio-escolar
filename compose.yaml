@@ -4,7 +4,6 @@ services:
       context: ./frontend-angular
       dockerfile: Dockerfile
     image: frontend:v2.0.0
-    container_name: frontend
     restart: unless-stopped
     volumes:
       - ./frontend-angular:/app
@@ -12,7 +11,7 @@ services:
     depends_on:
       - backend
     ports:
-      - "80:4200"
+      - "${FRONTEND_PORT:-8080}:4200"
 
   db:
     image: mysql:8.4
@@ -42,7 +41,6 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     image: backend:v1.0.0
-    container_name: backend
     volumes:
       - ./backend:/app
     ports:

@@ -73,6 +73,10 @@ def ensure_inventory_schema(apps, schema_editor):
 
 
 class Migration(migrations.Migration):
+    # MySQL implicitly commits DDL, so this schema reconciliation must run
+    # outside Django's migration transaction.
+    atomic = False
+
     dependencies = [
         ("api", "0004_restore_big_auto_fields"),
     ]
